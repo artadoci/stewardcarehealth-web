@@ -212,6 +212,83 @@ footer { background: var(--dark); padding: 64px 80px 40px; }
 .about-highlight { background: var(--parch); border-radius: 12px; padding: 28px 32px; margin: 28px 0; border-left: 4px solid var(--gold); }
 .about-highlight p { font-size: 15px; color: var(--navy); line-height: 1.8; margin: 0; font-weight: 400; }
 .about-invite { margin-top: 32px; font-family: "Playfair Display", serif; font-style: italic; font-size: 17px; color: var(--navy); line-height: 1.7; }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; height: 64px; }
+  .nav-links { display: none; }
+  .nav-logo svg { width: 36px; height: 36px; }
+
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 48px 24px 40px; }
+  .hero-right { display: none; }
+  .hero h1 { font-size: 36px; }
+  .hero-sub { font-size: 16px; margin: 20px 0 32px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions a, .hero-actions span, .hero-actions button { text-align: center !important; width: 100%; }
+
+  .philosophy { padding: 64px 24px; }
+  .philosophy h2 { font-size: 30px; }
+  .philosophy-grid { grid-template-columns: 1fr; border-radius: 8px; }
+  .phil-card { border-right: none; border-bottom: 1px solid rgba(27,43,75,0.12); padding: 32px 24px; }
+  .phil-card:last-child { border-bottom: none; }
+
+  .who { padding: 64px 24px; }
+  .who h2 { font-size: 30px; }
+  .who-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .services { padding: 64px 24px; }
+  .services h2 { font-size: 30px; margin-bottom: 32px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .svc-card { padding: 28px; }
+
+  .longevity { padding: 64px 24px; }
+  .longevity h2 { font-size: 30px; }
+  .prog-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .prog-card { padding: 24px 18px; }
+
+  .levels { padding: 64px 24px; }
+  .levels h2 { font-size: 30px; }
+  .levels-grid { grid-template-columns: 1fr; gap: 16px; }
+  .level-card { padding: 32px 24px; }
+
+  .locations { padding: 64px 24px; }
+  .locations h2 { font-size: 30px; }
+  .locations-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+  .loc-card { padding: 20px 16px; }
+  .loc-expanding { padding: 28px 20px; }
+  .loc-expanding h3 { font-size: 20px; }
+
+  .cta-band { grid-template-columns: 1fr; gap: 40px; padding: 64px 24px; }
+  .cta-band h2 { font-size: 30px; }
+  .cta-actions { flex-direction: column; align-items: stretch; }
+  .cta-actions .btn-primary, .cta-actions .btn-call { text-align: center; width: 100%; }
+
+  .about { padding: 64px 24px; }
+  .about-inner { grid-template-columns: 1fr; gap: 56px; }
+  .about-photo { max-width: 100%; border-radius: 12px; }
+  .about-photo-badge { left: 12px; right: 12px; bottom: -24px; padding: 14px 18px; }
+  .about-photo-badge strong { font-size: 14px; }
+  .about-content { padding-top: 32px; }
+  .about-content h2 { font-size: 30px; }
+  .about-pull { font-size: 16px; }
+  .about-body p { font-size: 14px; }
+
+  footer { padding: 48px 24px 32px; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  .modal-box { padding: 28px 20px; margin: 16px; }
+  .modal-close { top: 12px; right: 14px; }
+}
+
+@media (max-width: 480px) {
+  .who-grid { grid-template-columns: 1fr; }
+  .prog-grid { grid-template-columns: 1fr; }
+  .locations-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
