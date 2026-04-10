@@ -289,6 +289,27 @@ footer { background: var(--dark); padding: 64px 80px 40px; }
   .locations-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; }
 }
+
+.disclaimer-banner {
+  background: rgba(196,150,58,0.12);
+  border: 1px solid rgba(196,150,58,0.35);
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 520px;
+}
+.disclaimer-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0; margin-top: 5px;
+}
+.disclaimer-banner p {
+  font-size: 13px; color: #E8D08A; line-height: 1.6;
+  margin: 0; font-weight: 400;
+}
+.disclaimer-banner strong { color: var(--gold); font-weight: 600; }
 </style>
 </head>
 <body>
@@ -328,6 +349,10 @@ footer { background: var(--dark); padding: 64px 80px 40px; }
 
 <section class="hero">
   <div class="hero-left">
+    <div class="disclaimer-banner">
+      <div class="disclaimer-dot"></div>
+      <p><strong>Currently accepting inquiries.</strong> We are completing Colorado licensure and will begin serving clients in September 2026.</p>
+    </div>
     <h1>Care that lets<br/>life feel like <em>yours.</em></h1>
     <p class="hero-sub">Non-medical home care designed around the whole person — not just the tasks. We help older adults remain safely at home with dignity, autonomy, and meaningful connection.</p>
     <div class="hero-actions">
